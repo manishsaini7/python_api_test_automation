@@ -1,4 +1,8 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - before: pip install -r requirements.txt 
-    command: pytest
+    name: Test Case for Login User
+    command: pytest -v -m test_login_user
+
+  - name: Test Case for Create User in Terminal 2
+    command: pytest -v -m Test_create_user
